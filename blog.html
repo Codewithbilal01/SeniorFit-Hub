@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>SeniorFit Hub</title>
+    <style>
+        h1, h2, h3, h4, h5, h6 { font-family: 'poppins', sans-serif; }
+        p { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+
+<body>
+
+    <header class="text-white-400 bg-emerald-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-white-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <a href="index.html">
+                    <span class="ml-3 text-xl text-white font-semibold">SeniorFit Hub</span>
+                </a>
+            </a>
+
+            <nav class="text-white md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="/" class="mr-5 hover:text-white">Home</a>
+                <a href="/" class="mr-5 hover:text-white">Blog</a>
+                <a href="/" class="mr-5 hover:text-white">About</a>
+                <a href="/" class="mr-5 hover:text-white">Contact</a>
+            </nav>
+
+            <button
+                class="inline-flex items-center bg-green-800 text-white border-0 py-1 px-3 focus:outline-none hover:bg-emerald-700 rounded text-base mt-4 md:mt-0 cursor-pointer">Login
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 pt-15">
+        <!-- Featured Post -->
+        <section class="mb-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="relative">
+                    <img src="image assets/senior woman doing chair yoga.jpg" alt="Senior woman doing chair yoga"
+                        class="w-full h-72 object-cover rounded-lg shadow-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+                        <span class="text-white text-sm font-medium">Featured Workout</span>
+                    </div>
+                </div>
+
+                <div class="py-4">
+                    <span class="text-emerald-600 font-semibold">Fitness Guide</span>
+                    <h1 class="text-3xl font-bold text-black mt-2 mb-4">
+                        Chair Yoga: Safe Stretching for Improved Mobility
+                    </h1>
+                    <p class="text-black mb-4 leading-relaxed">
+                        Discover gentle yoga poses adapted for seniors that can be done seated. Improve flexibility,
+                        reduce joint pain, and enhance circulation with our 20-minute daily routine. Includes
+                        modifications for arthritis and limited mobility.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="bg-emerald-600 text-white px-6 py-2.5 rounded-lg hover:bg-emerald-700 transition">
+                            View Routine
+                        </a>
+                        <span class="text-sm text-gray-600">Includes printable PDF guide</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Articles -->
+        <section>
+            <h2 class="text-2xl font-bold text-black mb-8 border-l-4 border-emerald-600 pl-4">
+                Latest Health Tips
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Post 1 -->
+                <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="image assets/senior man doing balance exercise.jpeg" alt="Senior man doing balance exercises"
+                        class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-emerald-600 text-sm font-semibold">Fall Prevention</span>
+                    <h3 class="text-xl font-bold text-black mt-2 mb-2">
+                        5 Balance Exercises You Can Do at Home
+                    </h3>
+                    <p class="text-black text-sm mb-4">
+                        Simple daily exercises to improve stability and coordination using common household items.
+                    </p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <span>7 min read</span>
+                        <span class="mx-2">•</span>
+                        <span>Video Demo Included</span>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="image assets/healthyseniormeal.jpeg" alt="Healthy senior meal"
+                        class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-emerald-600 text-sm font-semibold">Nutrition</span>
+                    <h3 class="text-xl font-bold text-black mt-2 mb-2">
+                        Eating Well After 60: Essential Nutrients Guide
+                    </h3>
+                    <p class="text-black text-sm mb-4">
+                        Learn how to adapt your diet for changing nutritional needs, with easy recipe ideas.
+                    </p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <span>5 min read</span>
+                        <span class="mx-2">•</span>
+                        <span>Weekly Meal Plan</span>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="image assets/seniorhandexercising.jpeg" alt="Senior hands exercising"
+                        class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-emerald-600 text-sm font-semibold">Joint Care</span>
+                    <h3 class="text-xl font-bold text-black mt-2 mb-2">
+                        Low-Impact Exercises for Arthritic Joints
+                    </h3>
+                    <p class="text-black text-sm mb-4">
+                        Safe movement strategies to maintain mobility without exacerbating joint pain.
+                    </p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <span>6 min read</span>
+                        <span class="mx-2">•</span>
+                        <span>Physical Therapist Approved</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Popular Topics -->
+        <section class="mt-16">
+            <div class="bg-emerald-50 rounded-xl p-8">
+                <h2 class="text-2xl font-bold text-black mb-6">Explore Popular Topics</h2>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <a href="#" class="text-black hover:text-emerald-600 font-medium">
+                        Walking Programs
+                    </a>
+                    <a href="#" class="text-black hover:text-emerald-600 font-medium">
+                        Pain Management
+                    </a>
+                    <a href="#" class="text-black hover:text-emerald-600 font-medium">
+                        Sleep Quality
+                    </a>
+                    <a href="#" class="text-black hover:text-emerald-600 font-medium">
+                        Medication Safety
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wellness Tips -->
+        <section class="mt-16 pb-16">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-emerald-100 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black">Daily Movement Challenge</h3>
+                    </div>
+                    <p class="text-black mb-4">
+                        Join our 30-day program to gradually increase activity levels with safe, achievable goals.
+                    </p>
+                    <a href="#" class="text-emerald-600 font-semibold">Start Today →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-emerald-100 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black">Exercise Library</h3>
+                    </div>
+                    <p class="text-black mb-4">
+                        Browse our video collection of senior-approved exercises with modifications for all ability
+                        levels.
+                    </p>
+                    <a href="#" class="text-emerald-600 font-semibold">Browse Videos →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-emerald-900 text-white py-8">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6 space-y-4 md:space-y-0">
+                <!-- Page Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="/about" class="hover:text-emerald-300 transition-colors">About</a>
+                    <a href="/privacy-policy" class="hover:text-emerald-300 transition-colors">Privacy Policy</a>
+                    <a href="/terms-conditions" class="hover:text-emerald-300 transition-colors">Terms & Conditions</a>
+                    <a href="/disclaimer" class="hover:text-emerald-300 transition-colors">Disclaimer</a>
+                </div>
+    
+                <!-- Social Links -->
+                <div class="flex space-x-5">
+                    <a href="#" class="hover:text-emerald-300 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-emerald-300 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085c.626 1.956 2.444 3.379 4.6 3.419a9.967 9.967 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-emerald-300 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Copyright Text -->
+            <div class="text-white border-t border-emerald-800 pt-4 text-center text-xs text-emerald-300">
+                © 2024 SeniorFit Hub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
